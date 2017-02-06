@@ -39,6 +39,16 @@ Response body: {"data":"1554886"}
 
 # Open session service
 
+URL: https://localhost:4430/dev/v1/connect/topic/{topic_name}
+
+Example:
+
+URL: https://localhost:4430/dev/v1/connect/topic/NewUsers
+
+Request body: { "sessionId": "c9b9e9ba-d0fd-4ad2-8f47-2c9d95fec06a" }
+
+Response body: true
+
 # How to run the application
 
 - Generate a keystore with the following command:
