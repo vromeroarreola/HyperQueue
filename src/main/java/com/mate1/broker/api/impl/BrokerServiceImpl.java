@@ -50,7 +50,7 @@ public class BrokerServiceImpl implements BrokerService {
         }
     }
 
-    private void registerCustomerQueueObserverToSubjectQueue(String topic, String sessionId) {
+    public void registerCustomerQueueObserverToSubjectQueue(String topic, String sessionId) {
 
         QueueObserverImpl queueObserverImpl = new QueueObserverImpl();
         Consumer consumer = new Consumer(sessionId, queueObserverImpl);

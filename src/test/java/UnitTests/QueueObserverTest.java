@@ -1,6 +1,11 @@
 package UnitTests;
 
+import com.mate1.integration.model.Event;
+import com.mate1.queue.api.QueueObserver;
+import com.mate1.queue.api.impl.QueueObserverImpl;
+import org.junit.Assert;
 import org.junit.runner.RunWith;
+import org.mockito.Mockito;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.junit.Test;
 
@@ -9,37 +14,36 @@ public class QueueObserverTest {
 
     @Test
     public void push() {
-/*
+
         QueueObserver queueObserver = Mockito.mock(QueueObserver.class);
 
         Event event = new Event();
-        event.setUserId("123");
+        event.setData("123");
 
-        Mockito.when(queueObserver.push(event)).thenReturn(true);
+        Mockito.when(queueObserver.updatePushAction(event)).thenReturn(true);
 
         QueueObserverImpl hyperQueueServiceImpl = new QueueObserverImpl();
 
-        Assert.assertEquals( queueObserver.push(event), hyperQueueServiceImpl.push(event) );
-*/
+        Assert.assertEquals( queueObserver.updatePushAction(event), hyperQueueServiceImpl.updatePushAction(event) );
+
     }
 
     @Test
     public void pop() {
-/*
+
         QueueObserver queueObserver = Mockito.mock(QueueObserver.class);
 
         Event event = new Event();
-        event.setUserId("567");
+        event.setData("567");
 
-        Mockito.when(queueObserver.push(event)).thenReturn(true);
-        OngoingStubbing<Event> stubbing = Mockito.when(queueObserver.pop());
+        Mockito.when(queueObserver.updatePushAction(event)).thenReturn(true);
+        Mockito.when(queueObserver.updatePopAction()).thenReturn(event);
 
         QueueObserverImpl hyperQueueServiceImpl = new QueueObserverImpl();
-        boolean status = hyperQueueServiceImpl.push(event);
 
-        Assert.assertEquals( queueObserver.push(event), status );
-        Assert.assertEquals( stubbing, hyperQueueServiceImpl.pop() );
-*/
+        Assert.assertEquals( queueObserver.updatePushAction(event), hyperQueueServiceImpl.updatePushAction(event) );
+        Assert.assertEquals( queueObserver.updatePopAction(), hyperQueueServiceImpl.updatePopAction() );
+
     }
 
 }

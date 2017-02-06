@@ -6,6 +6,6 @@ public interface QueueObserver {
 
     Event updatePopAction();
 
-    void updatePushAction(Event event);
+    boolean updatePushAction(Event event);
 
 }

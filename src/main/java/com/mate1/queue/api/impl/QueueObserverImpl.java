@@ -13,8 +13,8 @@ public class QueueObserverImpl extends QueueImpl implements QueueObserver {
     }
 
     @Override
-    public void updatePushAction(Event event) {
-        push(event);
+    public boolean updatePushAction(Event event) {
+        return push(event);
     }
 
 }
