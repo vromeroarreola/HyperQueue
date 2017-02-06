@@ -1,6 +1,7 @@
 package com.mate1.integration.rest.api;
 
 import com.mate1.broker.api.impl.BrokerServiceImpl;
+import com.mate1.integration.model.SessionIdRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,9 +14,9 @@ public class OpenSessionService {
 
     // String sessionId
     @RequestMapping(value = "/{topic}", method = RequestMethod.POST)
-    public boolean openSession(@PathVariable String topic, @RequestBody String sessionIdRequest) {
+    public boolean openSession(@PathVariable String topic, @RequestBody SessionIdRequest sessionIdRequest) {
 
-        return broker.openSession(topic, sessionIdRequest);
+        return broker.openSession(topic, sessionIdRequest.getSessionId());
 
     }
 
