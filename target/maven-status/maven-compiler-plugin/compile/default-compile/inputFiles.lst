@@ -1,0 +1,16 @@
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/queue/api/impl/QueueImpl.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/business/model/Consumer.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/queue/api/SubjectQueue.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/broker/api/BrokerService.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/integration/rest/api/OpenSessionService.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/queue/api/Queue.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/queue/model/Node.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/integration/rest/api/CreateTopicService.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/integration/rest/api/ConsumerMessageService.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/queue/api/QueueObserver.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/integration/rest/api/ProducerMessageService.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/queue/api/impl/QueueObserverImpl.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/app/Application.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/broker/api/impl/BrokerServiceImpl.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/queue/api/impl/SubjectQueueImpl.java
+/Users/victor/Documents/Development/hyperqueue/src/main/java/com/mate1/integration/model/Event.java
