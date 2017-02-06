@@ -33,11 +33,12 @@ Example:
 
 URL: https://localhost:4430/dev/v1/pop/cde303d3-fb79-42ab-bf52-de2854b3c418
 
-Response body: "data":"1554886"
+Response body: {"data":"1554886"}
 
 # Open session service
 
 # Improvements
 
-- Finish tests
+- Finish unit tests
+- Finish integration tests
 - Add browser interface
