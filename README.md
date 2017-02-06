@@ -1,5 +1,3 @@
-# HyperQueue
-HyperQueue!
 
 # HyperQueue
 
